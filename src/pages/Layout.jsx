@@ -1,0 +1,19 @@
+import { Outlet, Link, Links } from "react-router-dom"
+import NavBar from "../components/NavBar"
+import Footer from "../components/Footer"
+export default function layout() {
+  return (
+    <>
+        <div className="bg-neutral-100 flex justify-center">
+            <div className="p-4 max-w-[640px] flex-1 flex flex-col gap-8">
+              <NavBar />
+              <Outlet/>
+              <Footer />
+            </div>
+        </div>
+      
+        
+    </>
+  )
+}
+  
