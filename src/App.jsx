@@ -6,7 +6,6 @@ import About from './pages/About'
 import Newsletter from './pages/Newsletter'
 import NoPage from './pages/NoPage'
 import './App.css'
-import './reset.css'
 import './index.css'
 
 function App() {
