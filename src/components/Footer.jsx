@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className='flex justify-between w-full'>
       <p>Made with ❤️ and 🍵</p>
-      <div className='flex gap-4 items-center px-2'>
+      <div className='flex gap-4 items-center px-2 dark:invert'>
         <img src={iconX} className='w-4 h-4' alt="" />
         <img src={iconGitHub}  className='w-4 h-4' alt="" />
         <img src={iconLinkedIn}  className='w-4 h-4' alt="" />

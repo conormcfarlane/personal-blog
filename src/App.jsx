@@ -6,6 +6,7 @@ import About from './pages/About'
 import Newsletter from './pages/Newsletter'
 import NoPage from './pages/NoPage'
 import BlogPost from './pages/BlogPost'
+import ScrollToTop from "./components/ScrollToTop"
 import './App.css'
 import './index.css'
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
    <BrowserRouter>
+   <ScrollToTop />
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}/>

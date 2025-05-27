@@ -4,10 +4,10 @@ import workSpaceLarge from '../../public/images/image-workspace-large.jpg'
 
 export default function About() {
   return (
-    <div className='flex flex-col gap-6'>
-      <h2 className='font-bold text-3xl'>About Me</h2>
+    <div className='flex flex-col gap-6 dark:text-neutral-400'>
+      <h2 className='font-bold text-3xl dark:text-white'>About Me</h2>
       <section className='flex flex-col gap-6'>
-         <p>About Me Hi, I'm Paulina! Ever since I can remember, I've had a passion for creativity and problem-solving. That's what led me to the world of front-end web development. There's something magical about seeing an idea come to life in the browser—whether it's a simple layout experiment or a complex interface for a bigger project.
+         <p>Hi, I'm Paulina! Ever since I can remember, I've had a passion for creativity and problem-solving. That's what led me to the world of front-end web development. There's something magical about seeing an idea come to life in the browser—whether it's a simple layout experiment or a complex interface for a bigger project.
       </p> 
 
       <p>When I'm not coding, I love getting lost in a good book. My taste is pretty eclectic: I'll happily read everything from fantasy novels to biographies of tech pioneers. Reading helps me unwind and often sparks new ideas for my coding projects.
