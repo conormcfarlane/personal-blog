@@ -5,6 +5,7 @@ import logoLinkedIn from '../../public/images/logo-linkedin.svg'
 import logoX from '../../public/images/logo-x.svg'
 import blogData from '../data/data.json'
 import { Link } from 'react-router-dom'
+import formatDate from '../utils/formatDate'
 
 const logos = [
   {src: logoX, alt: "x"},
@@ -28,7 +29,7 @@ export default function Home() {
         </p>
         <div className='flex gap-4'>
           {logos.map((logo,index) => (
-            <button key={logo.alt} className='bg-white h-10 w-10 flex justify-center items-center rounded-lg'>
+            <button key={logo.alt} className='bg-white h-10 w-10 flex justify-center items-center rounded-lg cursor-pointer'>
               <img src={logo.src} alt={logo.alt} className='h-4 w-4' />
             </button>
           ))}
@@ -42,10 +43,10 @@ export default function Home() {
        </div>
       
         {blogData.slice(0,4).map((post,index) => (
-          <div>
+          <div key={post.slug}>
             <Link to={`/blog/${post.slug}`} className='text-xl font-bold cursor-pointer hover:underline dark:hover:decoration-white text-neutral-700 dark:text-white'>{post.title}
             </Link>
-            <p className='italic dark:text-neutral-500'>{post.publishedAt.split("T")[0]}</p>
+            <p className='italic dark:text-neutral-500'>{formatDate(post.publishedAt)}</p>
           </div>
         ))}
         <Link to={"/blog"}>

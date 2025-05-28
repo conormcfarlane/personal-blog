@@ -50,7 +50,7 @@ export default function NavBar() {
             
           <button className='bg-white rounded-lg h-10 w-10 flex items-center justify-center cursor-pointer dark:bg-black'
           onClick={handleDarkModeToggle}>
-            <img src={isDarkMode ? moonIcon : sunIcon}  className="h-4" alt="" />
+            <img src={!isDarkMode ? moonIcon : sunIcon}  className="h-4" alt="" />
           </button>
           
         </div>
